@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center"
+    android:padding="24dp">
+
+<!-- Title of the App -->
+<TextView
+android:id="@+id/title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="32dp"
+android:text="Fitness Tracker"
+android:textColor="@android:color/black"
+android:textSize="28sp"
+android:textStyle="bold" />
+
+    <!-- App Logo -->
+<ImageView
+android:id="@+id/app_logo"
+android:layout_width="160dp"
+android:layout_height="160dp"
+android:layout_below="@id/title"
+android:layout_marginTop="16dp"
+android:layout_centerInParent="true"
+android:src="@drawable/fitness_logo"
+android:contentDescription="@string/app_logo" />
+
+    <!-- Login Form -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/app_logo"
+android:layout_marginTop="32dp"
+android:gravity="center"
+android:orientation="vertical"
+android:background="#80FFFFFF"
+    android:padding="16dp"
+    android:elevation="4dp">
+
+<EditText
+android:id="@+id/username_input"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:background="@drawable/rounded_corner"
+android:hint="Username"
+android:inputType="text"
+android:padding="18dp"
+android:textColor="@color/black"
+android:textColorHint="@color/gray"
+android:textSize="20sp" />
+
+<EditText
+android:id="@+id/password_input"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:background="@drawable/rounded_corner"
+android:hint="Password"
+android:inputType="textPassword"
+android:padding="18dp"
+android:textColor="@color/black"
+android:textColorHint="@color/gray"
+android:textSize="20sp" />
+
+<Button
+android:id="@+id/login_btn"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="32dp"
+android:backgroundTint="@color/colorPrimary"
+android:padding="18dp"
+android:text="Login"
+android:textColor="@color/white"
+android:textSize="20sp" />
+
+<TextView
+android:id="@+id/forgot_password"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:text="Forgot Password?"
+android:textColor="@color/colorAccent"
+android:textSize="16sp"
+android:clickable="true"
+android:focusable="true" />
+
+<TextView
+android:id="@+id/signup_link"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:text="Don't have an account? Sign Up"
+android:textColor="@android:color/holo_blue_dark"
+android:paddingTop="16dp" />
+
+    </LinearLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="account_icon">Account Icon</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="app_logo">App Logo</string>
+    <string name="fitness_tracker">Fitness Tracker</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="profile">Profile</string>
+</resources>
